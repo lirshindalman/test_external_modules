@@ -3,21 +3,21 @@ provider "aws" {
 }
 
 module "ec2" {
-  source      = "git::https://github.com/maxamel/test_module.git"
+  source      = "git::https://github.com/lirshindalman/test_module.git"
   ami_id      = "ami-0c55b159cbfafe1f0" 
   instance_type = "t2.micro"
   subnet_id   = "subnet-12345678"       
 }
 
 module "ec4" {
-  source      = "git::https://github.com/maxamel/test_module2.git"
+  source      = "git::https://github.com/lirshindalman/test_module2.git"
   ami_id      = "ami-0c55b159cbfafe1f0" 
   instance_type = "t2.micro"
   subnet_id   = "subnet-12345678"       
 }
 
 module "ec6" {
-  source      = "git::https://github.com/maxamel/test_module3.git"
+  source      = "git::https://github.com/lirshindalman/test_module3.git"
   ami_id      = "ami-0c55b159cbfafe1f0" 
   instance_type = "t2.micro"
   subnet_id   = "subnet-12345678"       
